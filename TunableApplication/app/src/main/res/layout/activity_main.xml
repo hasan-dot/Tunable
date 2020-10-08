@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOffWhite"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="1"
+        tools:context=".activity.MainActivity">
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border_edit_text_round"
+            android:hint="@string/title"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/edt_caption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_edit_text_round"
+            android:hint="@string/caption"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="70dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/stopRecording"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:foreground="@drawable/ic_stop_white" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/startRecording"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:foreground="@drawable/ic_mic_white" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menu_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_add">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_rec_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"
+            app:fab_size="mini"
+            fab:fab_colorNormal="@android:color/holo_orange_dark"
+            fab:fab_colorPressed="@android:color/darker_gray"
+            fab:fab_icon="@drawable/ic_playlist_white"
+            fab:fab_title="Record" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@android:color/holo_red_dark"
+            fab:fab_colorPressed="@android:color/darker_gray"
+            fab:fab_icon="@drawable/ic_exit_to_app_white"
+            fab:fab_size="mini"
+            fab:fab_title="Logout" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</RelativeLayout>

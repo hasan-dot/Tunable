@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Tunable</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_in">Login</string>
+    <string name="please_login">Please Login</string>
+    <string name="register_txt">Registration</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="title">Title</string>
+    <string name="caption">Caption</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.ubuntu.tunableapplication.activity.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/ttt"
+        android:gravity="center"
+        android:text="@string/register_txt"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edt_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/border_edit_text_round_top"
+        android:textColor="@android:color/black"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:background="@drawable/border_edit_text_notround"
+        android:hint="@string/last_name"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/border_edit_text_notround"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/border_edit_text_notround"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edt_cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/border_edit_text_round_bottom"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_round"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/colorOffWhite"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_button_round"
+            android:padding="0dp" />
+    </FrameLayout>
+
+</LinearLayout>
+</ScrollView>

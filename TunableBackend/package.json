@@ -1,0 +1,28 @@
+{
+  "name": "tunable",
+  "version": "1.0.0",
+  "description": "A mobile application that helps in recording and streaming music tracks played by them",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "jwt",
+    "passport",
+    "express",
+    "socket.io"
+  ],
+  "author": "Hasan Hawash",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.39.0",
+    "sequelize-cli": "^4.1.1",
+    "socket.io": "^2.1.1"
+  }
+}
